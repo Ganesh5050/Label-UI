@@ -44,7 +44,7 @@ export default function Footer() {
                   {/* Brand */}
                   <Link to="/" className="flex items-center gap-3 group">
                     <img
-                      src="/logo.jpeg"
+                      src="/favicon.png"
                       alt="Logo"
                       className="w-12 h-12 rounded-full group-hover:scale-105 transition-transform"
                     />
