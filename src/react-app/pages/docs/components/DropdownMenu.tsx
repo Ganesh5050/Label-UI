@@ -5,9 +5,6 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-  DropdownMenuCheckboxItem,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
   DropdownMenuShortcut,
   DropdownMenuGroup,
   DropdownMenuSub,
@@ -15,13 +12,8 @@ import {
   DropdownMenuSubTrigger,
 } from '@/react-app/components/ui/dropdown-menu';
 import { Button } from '@/react-app/components/ui/button';
-import { useState } from 'react';
 
 export default function DropdownMenuDoc() {
-  const [showStatusBar, setShowStatusBar] = useState(true);
-  const [showActivityBar, setShowActivityBar] = useState(false);
-  const [showPanel, setShowPanel] = useState(false);
-  const [position, setPosition] = useState('bottom');
 
   return (
     <div className="space-y-8">
@@ -53,7 +45,7 @@ export default function DropdownMenuDoc() {
 
       <div className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight">Preview</h2>
-        
+
         <div className="rounded-lg border border-border bg-card p-8">
           <div className="flex justify-center">
             <DropdownMenu>
@@ -131,7 +123,7 @@ export default function DropdownMenuDoc() {
 
       <div className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight">Installation</h2>
-        
+
         <div className="rounded-lg border border-border bg-card overflow-hidden">
           <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-muted/50">
             <span className="text-sm font-medium">CLI</span>
@@ -146,7 +138,7 @@ export default function DropdownMenuDoc() {
 
       <div className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight">Usage</h2>
-        
+
         <div className="rounded-lg border border-border bg-yellow-50 dark:bg-yellow-950/20 p-4 mb-4">
           <div className="flex gap-2">
             <div className="text-yellow-600 dark:text-yellow-500 font-semibold text-sm">
