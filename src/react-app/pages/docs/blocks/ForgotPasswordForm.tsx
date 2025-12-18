@@ -1,0 +1,105 @@
+export default function ForgotPasswordFormBlock() {
+  return (
+    <div className="space-y-8">
+      <div>
+        <h1 className="text-4xl font-semibold tracking-tight mb-2">Forgot password form</h1>
+        <p className="text-lg text-muted-foreground">
+          A form for initiating the password recovery process.
+        </p>
+      </div>
+
+      <div className="flex gap-2">
+        <a
+          href="https://clerk.com/docs"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 text-sm px-3 py-1.5 rounded-md border border-border hover:bg-accent"
+        >
+          Clerk docs ↗
+        </a>
+      </div>
+
+      {/* Preview Section */}
+      <div className="space-y-4">
+        <h2 className="text-2xl font-semibold tracking-tight">Preview</h2>
+        
+        <div className="rounded-lg border border-border bg-background p-8 min-h-[600px] flex items-center justify-center">
+          <div className="w-full max-w-md mx-auto p-8 rounded-lg border border-border bg-white text-black">
+            <div className="space-y-6">
+              <div className="space-y-2 text-center">
+                <h2 className="text-2xl font-semibold tracking-tight">Forgot your password?</h2>
+                <p className="text-sm text-gray-600">
+                  Enter your email and we'll send you a reset link
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  <label className="text-sm font-medium">Email</label>
+                  <input
+                    type="email"
+                    placeholder="m@example.com"
+                    className="w-full px-3 py-2 rounded-md border border-gray-300 bg-white text-black text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+
+                <button className="w-full py-2 px-4 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors">
+                  Send reset link
+                </button>
+
+                <button className="w-full py-2 px-4 text-sm text-gray-600 hover:text-black transition-colors">
+                  Back to sign in
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Installation */}
+      <div className="space-y-4">
+        <h2 className="text-2xl font-semibold tracking-tight">Installation</h2>
+        
+        <p className="text-sm text-muted-foreground">
+          Copy and paste the code below into your project.
+        </p>
+
+        <div className="rounded-lg border border-border bg-card overflow-hidden">
+          <div className="p-4">
+            <pre className="text-sm leading-relaxed">
+              <code className="text-primary whitespace-pre">{`import { View } from 'react-native';
+import { Text } from '~/components/ui/text';
+import { Input } from '~/components/ui/input';
+import { Button } from '~/components/ui/button';
+
+export default function ForgotPasswordForm() {
+  return (
+    <View className="max-w-md mx-auto p-8">
+      <View className="space-y-6">
+        <View className="space-y-2 text-center">
+          <Text className="text-2xl font-semibold">
+            Forgot your password?
+          </Text>
+          <Text className="text-sm text-muted-foreground">
+            Enter your email and we'll send you a reset link
+          </Text>
+        </View>
+
+        <View className="space-y-4">
+          <Input placeholder="m@example.com" />
+          
+          <Button variant="primary">
+            <Text>Send reset link</Text>
+          </Button>
+        </View>
+      </View>
+    </View>
+  );
+}`}</code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
