@@ -1,7 +1,7 @@
 # Label UI
 
 <div align="center">
-  <img src="public/logo.jpeg" alt="Label UI Logo" width="150" height="150" style="border-radius: 50%;" />
+  <img src="public/favicon.png" alt="Label UI Logo" width="150" height="150" style="border-radius: 50%;" />
   
   <h3>✨ Beautiful, Reusable UI Components ✨</h3>
   
